@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --color-1: #2b6822;
+    --color-2: #fff;
+    --color-3: #111;
+    /* --section-padding: 60px;
+    --main-duration: 0.5s; */
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Start Header */
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: #4f9c4a;
+    border-bottom: .5px solid var(--color-2);
+    /* position: fixed;
+    z-index: 1; */
+}
+
+.header h1 {
+    font-size: 30px;
+    color: var(--color-2);
+    padding-top: 4px;
+    padding-left: 60px;
+}
+
+.header h1 > span {
+    font-size: 40px;
+    color: var(--color-3);
+}
+.header input {
+    border: none;
+    padding: 10px;
+    width: 240px;
+    border-radius: 5px;
+    position: absolute;
+    top: 14px;
+    left: 210px;
+}
+
+.header input:focus {
+    outline: 2px solid var(--color-2);
+}
+
+.header > div {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-1);
+    position: absolute;
+    top: 17px;
+    left: 414px;
+    border-radius: 5px;
+}
+
+.header > div i {
+    color: var(--color-2);
+    top: 20%;
+    left: 22%;
+    position: absolute;
+}
+
+.header h2 {
+    color: var(--color-2);
+    font-size: 20px;
+    position: absolute;
+    top: 22px;
+    right: 280px;
+    cursor: pointer;
+}
+
+.header > i {
+    color: var(--color-2);
+    font-size: 20px;
+    position: absolute;
+    top: 25px;
+    right: 260px;
+    cursor: pointer;
+}
+
+.header button {
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-1);
+    border-radius: 5px;
+    position: absolute;
+    right: 80px;
+    top: 14px;
+}
+
+/* End Header */
+
+/* Start Landing */
+
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/landing.jpg');
+    background-size: cover;
+}
+
+.landing h1 {
+    font-size: 60px;
+    color: var(--color-2);
+    display: inline-block;
+    margin: 120px 0 0 130px;
+}
+
+.landing p {
+    font-size: 20px;
+    color: var(--color-2);
+    margin: 60px 130px;
+    line-height: 1.8;
+}
+
+.landing button {
+    margin: 20px 0 0 130px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid var(--color-2);
+    color: var(--color-2);
+    border-radius: 20px;
+}
+
+.landing button:hover {
+    background-color: var(--color-2);
+    color: var(--color-1);
+}
+
+/* End Landing */
+
+/* Start Section */
+
+.section {
+    width: 100%;
+    height: 100vh;
+}
+
+.section h1 {
+    font-size: 50px;
+    color: var(--color-3);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.section .secti {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px;
+    padding: 30px;
+    position: relative;
+}
+
+.section .sect {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section .sect img {
+    width: 320px;
+}
+
+.sec {
+    width: 200px;
+    height: 100px;
+    background-color: var(--color-1);
+    position: absolute;
+    top: 80%;
+}
+
+.sec h4 {
+    color: var(--color-2);
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.sec p {
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.sect h3 {
+    color: var(--color-3);
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    top: 111%; 
+}
+
+.sect button {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-bottom: 2px solid var(--color-1);
+    color: var(--color-1);
+    position: absolute;
+    top: 130%;
+}
+
+.sect button:hover {
+    background-color: var(--color-1);
+    color: var(--color-2);
+}
+
+/* End Section */
+
+/* Start ATV */
+
+.ATV {
+    width: 100%;
+    height: 130vh;
+    background-color: #f0f0f0;
+}
+
+.ATV h2 {
+    color: var(--color-3);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.ATV p {
+    color: var(--color-3);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+    padding: 20px 160px;
+}
+
+.grid img {
+    max-width: 1000%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.grid > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.grid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid .wide {
+    grid-column: span 2;
+}
+
+.grid .tall {
+    grid-row: span 2;
+}
+
+.first  img,
+.tall  img {
+    filter: brightness(.4);
+}
+
+.grid h3 {
+    color: var(--color-2);
+    font-size: 30px;
+    font-weight: bold;
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+}
+
+.grid p {
+    color: var(--color-2);
+    font-size: 15px;
+    font-weight: 500;
+    z-index: 1;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+
+.grid span {
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-2);
+    border-radius: 50px;
+    z-index: 1;
+    position: absolute;
+    top: 140px;
+    left: 20px;
+}
+
+.grid span i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: var(--color-2);
+}
+
+.tall h3 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.tall p {
+    position: absolute;
+    top: 180px;
+    left: 20px;
+}
+
+.tall span {
+    position: absolute;
+    top: 250px;
+    left: 20px;
+}
+
+/* End ATV */
+
+/* Start Contact*/
+
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.contact .elements {
+    width: 35%;
+    height: 90vh;
+    background-color: var(--color-1);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+    border-radius: 5px;
+}
+
+.elements h2 {
+    color: var(--color-2);
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 25px;
+} 
+
+.elements p {
+    color: var(--color-2);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+} 
+
+.grid-contact-element i {
+    color: var(--color-2);
+    font-size: 60px;
+    position: absolute;
+}
+
+.grid-contact-element h3 {
+    color: var(--color-2);
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.grid-contact-element h4 {
+    color: var(--color-2);
+    font-size: 18px;
+    font-weight: 700;
+    position: absolute;
+}
+
+.grid-contact-element:nth-child(1) i { top: 200px; left: 100px; }
+.grid-contact-element:nth-child(1) h3 { top: 270px; left: 70px; }
+.grid-contact-element:nth-child(1) h4 { top: 310px; left: 50px; }
+
+.grid-contact-element:nth-child(2) i { top: 200px; left: 300px; }
+.grid-contact-element:nth-child(2) h3 { top: 270px; left: 300px; }
+.grid-contact-element:nth-child(2) h4 { top: 310px; left: 280px; }
+
+.grid-contact-element:nth-child(3) i { top: 400px; left: 102px; }
+.grid-contact-element:nth-child(3) h3 { top: 470px; left: 90px; }
+.grid-contact-element:nth-child(3) h4 { top: 510px; left: 65px; }
+
+.grid-contact-element:nth-child(4) h3 { top: 420px; left: 280px; }
+.grid-contact-element:nth-child(4) i { font-size: 30px; top: 470px; }
+.grid-contact-element:nth-child(4) .i2 { left: 286px;}
+.grid-contact-element:nth-child(4) .i3 { left: 334px;}
+.grid-contact-element:nth-child(4) .i1 { left: 374px;}
+
+/* End Contact */
+
+/* Start Footer */
+
+.footer {
+    width: 100%;
+    height: 8vh;
+    background-color: var(--color-3);
+}
+
+.footer h2 {
+    color: var(--color-2);
+    font-size: 20px;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.footer span {
+    color: var(--color-1);
+}
+
+/* End Footer */
+
